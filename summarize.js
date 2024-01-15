@@ -1,6 +1,5 @@
 const axios = require("axios");
 async function summarizeText(text) {
-  // INSERT CODE SNIPPET FROM POSTMAN BELOW
   let data = JSON.stringify({
     inputs: text,
     parameters: {
@@ -27,7 +26,5 @@ async function summarizeText(text) {
     console.log(error);
   }
 }
-
-// Allows for summarizeText() to be called outside of this file
 
 module.exports = summarizeText;
